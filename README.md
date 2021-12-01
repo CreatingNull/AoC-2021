@@ -17,6 +17,11 @@ It's easy to get carried away on this challenge, but for me this year as I am wo
 4. I will not look at any reference solutions unless I have solved the problem already.
 5. I can research ways of efficiently solving general problems required by the task provided it doesn't conflict with Rule #4.
 
+## Structure
+
+Every day has its own package in the source, this is used to define any unique code or functions for solving the problems.
+The days code is executed using a test module that executes via a Pytest runner, this module verifies the answers against those I computed in the challenge.
+
 ## License
 
 The source of this repo uses the MIT open-source license, for details on the current licensing see LICENSE.md or click the badge above.
