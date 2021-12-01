@@ -1,0 +1,39 @@
+# Log Files
+logs/
+*.log
+
+# Database Files
+*.db
+
+# Ignore built / packaged code
+dist/
+build/
+bin/
+
+# PyCharm Projects
+.idea/
+
+# VSCode projects
+*.code-workspace
+
+# Pytest dirs
+__pycache__/
+.pytest_cache/
+
+# Ignore sphinx build data
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# Temp / test code
+*.scratch.py
+*.scratch.sh
+
+# Ignore dev virtual enviroment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
