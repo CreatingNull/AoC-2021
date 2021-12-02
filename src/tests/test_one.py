@@ -26,7 +26,7 @@ def test_day(dataset_path, window, result):
     log.debug("Loaded dataset of length %s", len(small_data))
     increases = count_increases(scan=small_data, window=window)
     log.info(
-        "Found %s increases in %s dataset scan with window %s.",
+        "Found %d increases in %s dataset scan with window %d.",
         increases,
         dataset_path.name,
         window,

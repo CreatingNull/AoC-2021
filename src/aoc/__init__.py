@@ -12,7 +12,7 @@ ROOT_PATH = Path(__file__).parents[1]
 
 # Configuring the global logger
 log = logging.getLogger()
-log.setLevel(logging.DEBUG)
+log.setLevel(logging.INFO)
 __handler = logging.StreamHandler(sys.stdout)
 __handler.setLevel(logging.DEBUG)
 __handler.setFormatter(
@@ -23,6 +23,7 @@ log.addHandler(__handler)
 
 class DatasetType(Enum):
     ROW_LIST_NUMERIC = 0
+    SPACE_DELIM = 1
 
 
 def load_dataset(data_type: DatasetType, data_path: Path):
@@ -33,4 +34,8 @@ def load_dataset(data_type: DatasetType, data_path: Path):
         # Return a list of numeric data
         with open(data_path) as file:
             return [int(line.rstrip()) for line in file]
+    if data_type == DatasetType.SPACE_DELIM:
+        # Return a 2D list containing string data, delimited via space.
+        with open(data_path) as file:
+            return [[cell.strip() for cell in line.split(" ")] for line in file]
     raise NotImplementedError("I don't know how to handle this data yet.")
