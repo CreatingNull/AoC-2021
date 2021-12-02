@@ -22,8 +22,10 @@ It's easy to get carried away on this challenge, but I have a full time job and 
 ## Structure
 
 Every day has its own package in the `src`, this is used to define any unique code or functions for solving the daily problems.
+My personal data is included as a text file in each challenge's package under the `data` subdir, this is so anyone could verify my results without needing my AoC auth token.
+
 The days code is executed using a module in the `src\tests\` package that executes via a Pytest runner.
-This pytest modules verify the answers against those I computed in the challenge.
+This pytest modules verify the answers against those I computed in the challenge, you can see the result of all the automated tests in [Github Actions](https://github.com/CreatingNull/AoC-2021/actions/workflows/run-tests.yml).
 
 Code formatting is handled via [pre-commit](https://github.com/pre-commit/pre-commit) see the [hooks](.pre-commit-config.yaml) used on this repo.
 
