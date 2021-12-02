@@ -6,7 +6,7 @@ from aoc import DatasetType
 from aoc import load_dataset
 from aoc import log
 from aoc import ROOT_PATH
-from one import Scan
+from one import count_increases
 
 
 @pytest.mark.parametrize(
@@ -24,8 +24,7 @@ def test_day(dataset_path, window, result):
         DatasetType.ROW_LIST_NUMERIC, ROOT_PATH.joinpath(dataset_path)
     )
     log.debug("Loaded dataset of length %s", len(small_data))
-    scan_object = Scan(scan=small_data, window=window)
-    increases = scan_object.increases
+    increases = count_increases(scan=small_data, window=window)
     log.info(
         "Found %s increases in %s dataset scan with window %s.",
         increases,

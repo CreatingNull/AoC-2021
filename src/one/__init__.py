@@ -1,25 +1,20 @@
 """--- Day 1: Sonar Sweep ---"""
-from dataclasses import dataclass
 
 
-@dataclass
-class Scan:
-    """Describing the number of increases and decreases in a scan."""
+def count_increases(scan: list, window: int) -> int:
+    """Count the number of gradient increases in scan data for a window length.
 
-    scan: list
-    window: int  # window for rolling gradient comparison
-    increases: int  # count of the number of increases in the scan
-
-    def __init__(self, scan: list, window: int):
-        """Creates the object and runs computations on data."""
-        self.scan = scan
-        self.window = window
-        self.increases = 0
-        for index in range(len(self.scan) - self.window):
-            # Iterate through the window transitions and compute the sums
-            if (
-                sum(self.scan[index + 1 : index + self.window + 1])
-                - sum(self.scan[index : index + self.window])
-                > 0
-            ):
-                self.increases += 1
+    :param scan: List containing the numeric scan data to evaluate.
+    :param window: The integer length of the window to include in the gradient sum.
+    :return: Number of increases in gradient for the input data.
+    """
+    increases = 0
+    for index in range(len(scan) - window):
+        # Iterate through the window transitions and compute the sums
+        if (
+            sum(scan[index + 1 : index + window + 1])
+            - sum(scan[index : index + window])
+            > 0
+        ):
+            increases += 1
+    return increases
