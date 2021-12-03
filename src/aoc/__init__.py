@@ -24,6 +24,7 @@ log.addHandler(__handler)
 class DatasetType(Enum):
     ROW_LIST_NUMERIC = 0
     SPACE_DELIM = 1
+    ROW_LIST_BINARY = 2
 
 
 def load_dataset(data_type: DatasetType, data_path: Path):
@@ -38,4 +39,8 @@ def load_dataset(data_type: DatasetType, data_path: Path):
         # Return a 2D list containing string data, delimited via space.
         with open(data_path) as file:
             return [[cell.strip() for cell in line.split(" ")] for line in file]
+    elif data_type == DatasetType.ROW_LIST_BINARY:
+        # Return a list of byte array objects.
+        with open(data_path) as file:
+            return [int(line.rstrip(), 2) for line in file]
     raise NotImplementedError("I don't know how to handle this data yet.")
