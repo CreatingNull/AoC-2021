@@ -1,4 +1,4 @@
-"""Test runner for day two."""
+"""Test cases for day two."""
 from pathlib import Path
 
 import pytest
