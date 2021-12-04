@@ -2,11 +2,10 @@
 from pathlib import Path
 
 import pytest
-from aoc import DatasetType
-from aoc import load_dataset
 from aoc import log
 from aoc import ROOT_PATH
 from day2 import compute_xy_product
+from day2 import load_dataset
 
 
 @pytest.mark.parametrize(
@@ -20,6 +19,6 @@ from day2 import compute_xy_product
 )
 def test_day(dataset_path: Path, aimed: bool, result: int):
     """Test case for verifying the results of day 2."""
-    data_set = load_dataset(DatasetType.SPACE_DELIM, ROOT_PATH.joinpath(dataset_path))
+    data_set = load_dataset(ROOT_PATH.joinpath(dataset_path))
     log.info("Loaded %s data with %d instructions", dataset_path.name, len(data_set))
     assert result == compute_xy_product(data_set, aimed)

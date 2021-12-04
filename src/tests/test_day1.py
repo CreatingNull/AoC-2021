@@ -2,11 +2,10 @@
 from pathlib import Path
 
 import pytest
-from aoc import DatasetType
-from aoc import load_dataset
 from aoc import log
 from aoc import ROOT_PATH
 from day1 import count_increases
+from day1 import load_dataset
 
 
 @pytest.mark.parametrize(
@@ -20,9 +19,7 @@ from day1 import count_increases
 )
 def test_day(dataset_path: Path, window: int, result: int):
     """Test case for verifying the results of day 1."""
-    small_data = load_dataset(
-        DatasetType.ROW_LIST_NUMERIC, ROOT_PATH.joinpath(dataset_path)
-    )
+    small_data = load_dataset(ROOT_PATH.joinpath(dataset_path))
     log.debug("Loaded %s dataset of length %s", dataset_path.name, len(small_data))
     increases = count_increases(scan=small_data, window=window)
     log.info(

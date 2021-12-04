@@ -2,8 +2,6 @@
 from pathlib import Path
 
 import pytest
-from aoc import DatasetType
-from aoc import load_dataset
 from aoc import log
 from aoc import ROOT_PATH
 from day3 import DiagnosticRates
@@ -18,14 +16,13 @@ from day3 import DiagnosticRates
 )
 def test_day(dataset_path: Path, num_bits: int, result_first: int, result_second: int):
     """Test case for verifying the results of day 3."""
-    data = load_dataset(DatasetType.ROW_LIST_BINARY, ROOT_PATH.joinpath(dataset_path))
+    rates = DiagnosticRates(ROOT_PATH.joinpath(dataset_path), num_bits)
     log.info(
         "Loaded day 3 dataset %s of %d rows of %s bit numbers",
         dataset_path.name,
-        len(data),
+        len(rates.diagnostic_data),
         num_bits,
     )
-    rates = DiagnosticRates(data, num_bits)
     product_first = rates.gamma * rates.epsilon
     log.info(
         "Computed gamma rate %d and epsilon rate %d (product=%d)",

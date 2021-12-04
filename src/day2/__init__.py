@@ -1,4 +1,6 @@
 """--- Day 2: Dive! ---"""
+from pathlib import Path
+
 from aoc import log
 
 
@@ -32,3 +34,8 @@ def compute_xy_product(instructions: [], aimed: bool) -> int:
         product,
     )
     return product
+
+
+def load_dataset(dataset_path: Path):
+    with open(dataset_path) as file:
+        return [[cell.strip() for cell in line.split(" ")] for line in file]

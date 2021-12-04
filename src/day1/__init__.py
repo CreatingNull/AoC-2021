@@ -1,4 +1,5 @@
 """--- Day 1: Sonar Sweep ---"""
+from pathlib import Path
 
 
 def count_increases(scan: list, window: int) -> int:
@@ -18,3 +19,9 @@ def count_increases(scan: list, window: int) -> int:
         ):
             increases += 1
     return increases
+
+
+def load_dataset(dataset_path: Path):
+    """Processes the input file and returns a list of numeric data."""
+    with open(dataset_path) as file:
+        return [int(line.rstrip()) for line in file]

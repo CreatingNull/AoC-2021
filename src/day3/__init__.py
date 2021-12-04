@@ -1,5 +1,6 @@
 """--- Day 3: Binary Diagnostic ---"""
 from dataclasses import dataclass
+from pathlib import Path
 
 
 @dataclass
@@ -13,8 +14,9 @@ class DiagnosticRates:
     o2: int = None
     co2: int = None
 
-    def __init__(self, diagnostic_data, num_bits):
-        self.diagnostic_data = diagnostic_data
+    def __init__(self, dataset_path: Path, num_bits):
+        with open(dataset_path) as file:
+            self.diagnostic_data = [int(line.rstrip(), 2) for line in file]
         self.num_bits = num_bits
         self.__process_diagnostics()
         self.__compute_epsilon_rate()
