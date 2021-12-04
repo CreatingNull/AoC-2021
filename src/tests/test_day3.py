@@ -6,14 +6,14 @@ from aoc import DatasetType
 from aoc import load_dataset
 from aoc import log
 from aoc import ROOT_PATH
-from three import DiagnosticRates
+from day3 import DiagnosticRates
 
 
 @pytest.mark.parametrize(
     "dataset_path,num_bits,result_first,result_second",
     [
-        [Path("three/data/data-small.txt"), 5, 198, 230],
-        [Path("three/data/data-large.txt"), 12, 852500, 1007985],
+        [Path("day3/data/data-small.txt"), 5, 198, 230],
+        [Path("day3/data/data-large.txt"), 12, 852500, 1007985],
     ],
 )
 def test_day(dataset_path: Path, num_bits: int, result_first: int, result_second: int):
