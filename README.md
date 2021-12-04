@@ -17,7 +17,7 @@ These are **not** ideal or reference solutions by any stretch of the imagination
 | 1   | --- Day 1: Sonar Sweep ---       | :heavy_check_mark: :heavy_check_mark: [Complete](src/day1) |
 | 2   | --- Day 2: Dive! ---             | :heavy_check_mark: :heavy_check_mark: [Complete](src/day2) |
 | 3   | --- Day 3: Binary Diagnostic --- | :heavy_check_mark: :heavy_check_mark: [Complete](src/day3) |
-| 5   | --- Day 4: Giant Squid ---       | :heavy_check_mark: :heavy_check_mark: [Complete](src/day4) |
+| 4   | --- Day 4: Giant Squid ---       | :heavy_check_mark: :heavy_check_mark: [Complete](src/day4) |
 
 ## Personal Rules
 
@@ -37,6 +37,7 @@ My personal data is included as a text file in each challenge's package under th
 The days code is executed using a module in the [tests](src/tests) package that executes via a Pytest runner.
 This pytest modules verify the answers against those I computed in the challenge, you can see the result of all the automated tests in [Github Actions](https://github.com/CreatingNull/AoC-2021/actions/workflows/run-tests.yml).
 
+Repository dependencies for executition are located in [requirements.txt](resources/requirements.txt).
 Code formatting is handled via [pre-commit](https://github.com/pre-commit/pre-commit) see the [hooks](.pre-commit-config.yaml) used on this repo.
 
 ## License
