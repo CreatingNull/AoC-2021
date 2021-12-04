@@ -18,12 +18,12 @@ from day1 import count_increases
         [Path("day1/data/large.txt"), 3, 1781],
     ],
 )
-def test_day(dataset_path, window, result):
+def test_day(dataset_path: Path, window: int, result: int):
     """Test case for verifying the results of day 1."""
     small_data = load_dataset(
         DatasetType.ROW_LIST_NUMERIC, ROOT_PATH.joinpath(dataset_path)
     )
-    log.debug("Loaded dataset of length %s", len(small_data))
+    log.debug("Loaded %s dataset of length %s", dataset_path.name, len(small_data))
     increases = count_increases(scan=small_data, window=window)
     log.info(
         "Found %d increases in %s dataset scan with window %d.",
