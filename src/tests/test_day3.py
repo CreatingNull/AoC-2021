@@ -8,20 +8,20 @@ from day3 import DiagnosticRates
 
 
 @pytest.mark.parametrize(
-    "dataset_path,num_bits,result_first,result_second",
+    "dataset_path,result_first,result_second",
     [
-        [Path("day3/data/data-small.txt"), 5, 198, 230],
-        [Path("day3/data/data-large.txt"), 12, 852500, 1007985],
+        [Path("day3/data/data-small.txt"), 198, 230],
+        [Path("day3/data/data-large.txt"), 852500, 1007985],
     ],
 )
-def test_day(dataset_path: Path, num_bits: int, result_first: int, result_second: int):
+def test_day(dataset_path: Path, result_first: int, result_second: int):
     """Test case for verifying the results of day 3."""
-    rates = DiagnosticRates(ROOT_PATH.joinpath(dataset_path), num_bits)
+    rates = DiagnosticRates(ROOT_PATH.joinpath(dataset_path))
     log.info(
         "Loaded day 3 dataset %s of %d rows of %s bit numbers",
         dataset_path.name,
         len(rates.diagnostic_data),
-        num_bits,
+        rates.num_bits,
     )
     product_first = rates.gamma * rates.epsilon
     log.info(

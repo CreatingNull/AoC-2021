@@ -14,10 +14,11 @@ class DiagnosticRates:
     o2: int = None
     co2: int = None
 
-    def __init__(self, dataset_path: Path, num_bits):
+    def __init__(self, dataset_path: Path):
         with open(dataset_path) as file:
+            self.num_bits = len(file.readline().strip())
+            file.seek(0)  # Just peek at the data for computing bytes
             self.diagnostic_data = [int(line.rstrip(), 2) for line in file]
-        self.num_bits = num_bits
         self.__process_diagnostics()
         self.__compute_epsilon_rate()
 
