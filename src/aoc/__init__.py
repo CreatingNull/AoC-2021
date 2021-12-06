@@ -4,7 +4,6 @@ Contains generic functionality not specific to days.
 """
 import logging
 import sys
-from enum import Enum
 from pathlib import Path
 
 
