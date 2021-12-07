@@ -5,21 +5,22 @@
 [![Repo Tests](https://img.shields.io/github/workflow/status/CreatingNull/AoC-2021/Tests?logo=GitHub&style=flat-square&label=tests)](https://github.com/CreatingNull/AoC-2021/actions/workflows/run-tests.yml)
 [![License](https://img.shields.io/:license-mit-blue.svg?style=flat-square&color=orange)](LICENSE.md)
 [![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/psf/black)
-[![Stars](https://img.shields.io/badge/progress-12%20stars-000000.svg?logo=star&style=flat-square&color=yellow)](https://adventofcode.com/2021)
+[![Stars](https://img.shields.io/badge/progress-14%20stars-000000.svg?logo=star&style=flat-square&color=yellow)](https://adventofcode.com/2021)
 
 Just having a stab at the [2021 advent of code](https://adventofcode.com/2021/) challenge.
 These are **not** ideal or reference solutions by any stretch of the imagination.
 
 ## Progress
 
-| Day | Name                                | Status                                                     |
-| --- | ----------------------------------- | ---------------------------------------------------------- |
-| 1   | --- Day 1: Sonar Sweep ---          | :heavy_check_mark: :heavy_check_mark: [Complete](src/day1) |
-| 2   | --- Day 2: Dive! ---                | :heavy_check_mark: :heavy_check_mark: [Complete](src/day2) |
-| 3   | --- Day 3: Binary Diagnostic ---    | :heavy_check_mark: :heavy_check_mark: [Complete](src/day3) |
-| 4   | --- Day 4: Giant Squid ---          | :heavy_check_mark: :heavy_check_mark: [Complete](src/day4) |
-| 5   | --- Day 5: Hydrothermal Venture --- | :heavy_check_mark: :heavy_check_mark: [Complete](src/day5) |
-| 6   | --- Day 6: Lanternfish ---          | :heavy_check_mark: :heavy_check_mark: [Complete](src/day6) |
+| Day | Name                                   | Status                                                     |
+| --- | -------------------------------------- | ---------------------------------------------------------- |
+| 1   | --- Day 1: Sonar Sweep ---             | :heavy_check_mark: :heavy_check_mark: [Complete](src/day1) |
+| 2   | --- Day 2: Dive! ---                   | :heavy_check_mark: :heavy_check_mark: [Complete](src/day2) |
+| 3   | --- Day 3: Binary Diagnostic ---       | :heavy_check_mark: :heavy_check_mark: [Complete](src/day3) |
+| 4   | --- Day 4: Giant Squid ---             | :heavy_check_mark: :heavy_check_mark: [Complete](src/day4) |
+| 5   | --- Day 5: Hydrothermal Venture ---    | :heavy_check_mark: :heavy_check_mark: [Complete](src/day5) |
+| 6   | --- Day 6: Lanternfish ---             | :heavy_check_mark: :heavy_check_mark: [Complete](src/day6) |
+| 7   | --- Day 7: The Treachery of Whales --- | :heavy_check_mark: :heavy_check_mark: [Complete](src/day7) |
 
 ## Personal Rules
 
