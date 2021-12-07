@@ -1,6 +1,6 @@
 # ![NullTek Documentation](../../resources/NullTekDocumentationLogo.png) --- Day 6: Lanternfish ---
 
-This package contains the source and data for [day 5](https://adventofcode.com/2021/day/5) of the challenge.
+This package contains the source and data for [day 6](https://adventofcode.com/2021/day/6) of the challenge.
 
 * Status: Complete
 * Difficulty Rating: 1 / 5
