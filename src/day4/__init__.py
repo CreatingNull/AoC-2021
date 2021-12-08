@@ -3,6 +3,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from aoc import log
+from aoc import open_utf8
 from numpy import array
 from numpy import short
 from numpy import sum as sum_
@@ -10,6 +11,7 @@ from numpy import sum as sum_
 
 @dataclass
 class Bingo:
+    """Stores the complete data for running the bingo game."""
 
     bingo_input: array  # A list of the bingo numbers to be called in sequential order
     bingo_boards: array  # 3D array tracking the current state of the bingo boards
@@ -21,7 +23,7 @@ class Bingo:
         object."""
         self.win_order = []
         self.result_products = []
-        with open(dataset_path) as file:
+        with open_utf8(dataset_path) as file:
             self.bingo_input = array(
                 [short(entry) for entry in file.readline().split(",")]
             )
@@ -56,7 +58,7 @@ class Bingo:
         :param called_value: The called integer value to mark in the game of bingo.
         :return:
         """
-        for board_index in range(len(self.bingo_boards)):
+        for board_index, _ in enumerate(self.bingo_boards):
             if (
                 board_index not in self.win_order
                 and called_value in self.bingo_boards[board_index]

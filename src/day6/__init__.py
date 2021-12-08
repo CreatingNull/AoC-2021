@@ -1,6 +1,8 @@
 """--- Day 6: Lanternfish ---"""
 from pathlib import Path
 
+from aoc import open_utf8
+
 
 def simulate_population(fish: {}, days: int) -> {}:
     """Step through the days adding additional '8' keyed fish from the '0'
@@ -10,7 +12,7 @@ def simulate_population(fish: {}, days: int) -> {}:
     :param days: Number of days to simulate.
     :return: Dictionary containing the updated state of the fish.
     """
-    for day in range(days):
+    for _ in range(days):
         daily_fish = fish[0]
         for index in range(0, 8):
             if index in fish:  # shift the fish 8 -> 1 down
@@ -27,7 +29,7 @@ def load_dataset(dataset_path: Path) -> {}:
     :return: Dictionary containing day counter keys to number of fish values.
     """
     data = {i: 0 for i in range(9)}  # The possible counter states for the fish
-    with open(dataset_path) as file:
+    with open_utf8(dataset_path) as file:
         for line in file:
             for digit in line.split(","):
                 data[int(digit)] += 1

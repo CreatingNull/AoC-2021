@@ -22,10 +22,10 @@ def test_day(dataset_path: Path, result_hv: int, result_all: int):
     )
     count_hv = 0  # Record horizontal and vertical overlapped points
     count_all = 0  # Record all overlapped points
-    for point in data:
-        if data[point].value_hv > 1:
+    for _, point in data.items():
+        if point.value_hv > 1:
             count_hv += 1
-        if data[point].value_hv + data[point].value_d > 1:
+        if point.value_hv + point.value_d > 1:
             count_all += 1
     log.info(
         "Found %s horizontal and vertical overlaps, and %d overall overlaps.",

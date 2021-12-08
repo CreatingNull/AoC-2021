@@ -2,6 +2,7 @@
 from pathlib import Path
 
 from aoc import log
+from aoc import open_utf8
 
 
 def compute_xy_product(instructions: [], aimed: bool) -> int:
@@ -37,5 +38,6 @@ def compute_xy_product(instructions: [], aimed: bool) -> int:
 
 
 def load_dataset(dataset_path: Path):
-    with open(dataset_path) as file:
+    """Loads the movement instructions as a 2 dimension string list."""
+    with open_utf8(dataset_path) as file:
         return [[cell.strip() for cell in line.split(" ")] for line in file]

@@ -38,4 +38,4 @@ def test_day(dataset_path: Path, result_first: int, result_second: int):
         product_second,
     )
     assert product_first == result_first
-    assert result_second == result_second
+    assert product_second == result_second

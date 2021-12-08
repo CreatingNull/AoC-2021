@@ -2,6 +2,8 @@
 from dataclasses import dataclass
 from pathlib import Path
 
+from aoc import open_utf8
+
 
 @dataclass
 class DiagnosticRates:
@@ -15,7 +17,7 @@ class DiagnosticRates:
     co2: int = None
 
     def __init__(self, dataset_path: Path):
-        with open(dataset_path) as file:
+        with open_utf8(dataset_path) as file:
             self.num_bits = len(file.readline().strip())
             file.seek(0)  # Just peek at the data for computing bytes
             self.diagnostic_data = [int(line.rstrip(), 2) for line in file]
@@ -25,8 +27,8 @@ class DiagnosticRates:
     def __process_diagnostics(self):
         """Iterates the diagnostic data to compute summary rates."""
         gamma_bits = ""  # tracking the final bit result for gamma rate
-        o2_inclusions = [data_index for data_index in range(len(self.diagnostic_data))]
-        co2_inclusions = [data_index for data_index in range(len(self.diagnostic_data))]
+        o2_inclusions = list(range(len(self.diagnostic_data)))
+        co2_inclusions = list(range(len(self.diagnostic_data)))
         for bit_index in range(
             self.num_bits
         ):  # Iterate bits, note bitmasks are from MSB
@@ -96,6 +98,8 @@ class DiagnosticRates:
             ]
         return inclusion_indices
 
+    # Pylint not understanding the type of gamma is already checked.
+    # pylint: disable=E1130
     def __compute_epsilon_rate(self):
         """Computes the epsilon rate as the complement of the gamma rate."""
-        self.epsilon = (~self.gamma) & (2 ** self.num_bits - 1)
+        self.epsilon = (~self.gamma) & (2 ** self.num_bits - 1) if self.gamma else None

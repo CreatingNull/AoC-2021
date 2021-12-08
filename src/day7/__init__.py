@@ -1,6 +1,8 @@
 """--- Day 7: The Treachery of Whales ---"""
 from pathlib import Path
 
+from aoc import open_utf8
+
 
 def find_minima(crabs: [int], flat_fuel_cost: bool) -> []:
     """Iterates through the range of crabs and locates the.
@@ -40,7 +42,7 @@ def load_dataset(dataset_path: Path) -> [int]:
     :param dataset_path: Path object to load the data from.
     :return: List of integers representing positions of individual crabs.
     """
-    with open(dataset_path) as file:
+    with open_utf8(dataset_path) as file:
         return [
             int(number)
             for line in file

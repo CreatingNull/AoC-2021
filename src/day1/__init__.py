@@ -1,6 +1,8 @@
 """--- Day 1: Sonar Sweep ---"""
 from pathlib import Path
 
+from aoc import open_utf8
+
 
 def count_increases(scan: list, window: int) -> int:
     """Count the number of gradient increases in scan data for a window length.
@@ -23,5 +25,5 @@ def count_increases(scan: list, window: int) -> int:
 
 def load_dataset(dataset_path: Path):
     """Processes the input file and returns a list of numeric data."""
-    with open(dataset_path) as file:
+    with open_utf8(dataset_path) as file:
         return [int(line.rstrip()) for line in file]

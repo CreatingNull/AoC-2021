@@ -4,9 +4,12 @@ from operator import add
 from operator import sub
 from pathlib import Path
 
+from aoc import open_utf8
+
 
 @dataclass
 class Point:
+    """Cartesian point that also stores value data."""
 
     x: int
     y: int
@@ -16,6 +19,7 @@ class Point:
 
 @dataclass
 class Vent:
+    """Linear volcanic Vent defined by two points."""
 
     p1: Point
     p2: Point
@@ -49,7 +53,7 @@ def load_dataset(dataset_path: Path) -> {str: Point}:
     :return: Dictionary of 'x,y' keys with populated Point values.
     """
     data = {}
-    with open(dataset_path) as file:
+    with open_utf8(dataset_path) as file:
         for line in file:
             if len(line.strip()) > 1:
                 vent = Vent(
