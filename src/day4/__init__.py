@@ -5,7 +5,7 @@ from pathlib import Path
 from aoc import log
 from aoc import open_utf8
 from numpy import array
-from numpy import short
+from numpy import byte
 from numpy import sum as sum_
 
 
@@ -25,7 +25,7 @@ class Bingo:
         self.result_products = []
         with open_utf8(dataset_path) as file:
             self.bingo_input = array(
-                [short(entry) for entry in file.readline().split(",")]
+                [byte(entry) for entry in file.readline().split(",")]
             )
             bingo_boards = []  # Easier to build bingo boards in a list.
             for line in file:
@@ -39,7 +39,7 @@ class Bingo:
                             if len(entry.strip()) > 0  # single digits have extra space
                         ]
                     )
-            self.bingo_boards = array(bingo_boards, dtype=short)
+            self.bingo_boards = array(bingo_boards, dtype=byte)
             log.info(
                 "Loaded day 4 %s dataset of bingo input %d with %d bingo boards",
                 dataset_path.name,

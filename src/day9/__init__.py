@@ -5,8 +5,8 @@ from pathlib import Path
 from aoc import log
 from aoc import open_utf8
 from numpy import array
+from numpy import byte
 from numpy import product
-from numpy import short
 from numpy import sort
 
 
@@ -135,9 +135,9 @@ def load_dataset(dataset_path: Path) -> array:
     with open_utf8(dataset_path) as file:
         return array(
             [
-                [int(digit) for digit in line.strip()]
+                [byte(digit) for digit in line.strip()]
                 for line in file
                 if len(line.strip()) > 0
             ],
-            dtype=short,
+            dtype=byte,
         )

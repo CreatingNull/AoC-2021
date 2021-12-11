@@ -77,7 +77,7 @@ def load_dataset(dataset_path: Path) -> array:
     with open_utf8(dataset_path) as file:
         return array(
             [
-                [int(cell) for cell in row.strip()]
+                [byte(cell) for cell in row.strip()]
                 for row in file
                 if len(row.strip()) > 0
             ],
