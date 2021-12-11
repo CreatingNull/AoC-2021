@@ -26,5 +26,4 @@ def test_day(dataset_path: Path, simple_decode: int, full_decode: int):
     )
     sums = decode_sequences(data)
     assert sums[0] == simple_decode
-    if full_decode is not None:
-        assert sums[1] == full_decode
+    assert sums[1] == full_decode
