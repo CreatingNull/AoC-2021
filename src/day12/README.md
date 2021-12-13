@@ -1,6 +1,6 @@
 # ![NullTek Documentation](../../resources/NullTekDocumentationLogo.png) --- Day 12: Passage Pathing ---
 
-This package contains the source and data for [day 11](https://adventofcode.com/2021/day/11) of the challenge.
+This package contains the source and data for [day 12](https://adventofcode.com/2021/day/12) of the challenge.
 
 * Status: Complete
 * Difficulty Rating: 3.5 / 5
