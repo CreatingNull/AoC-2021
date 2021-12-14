@@ -5,7 +5,7 @@
 [![Repo Tests](https://img.shields.io/github/workflow/status/CreatingNull/AoC-2021/Tests?logo=GitHub&style=flat-square&label=tests)](https://github.com/CreatingNull/AoC-2021/actions/workflows/run-tests.yml)
 [![License](https://img.shields.io/:license-mit-blue.svg?style=flat-square&color=orange)](LICENSE.md)
 [![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/psf/black)
-[![Stars](https://img.shields.io/badge/progress-24%20stars-000000.svg?logo=star&style=flat-square&color=yellow)](https://adventofcode.com/2021)
+[![Stars](https://img.shields.io/badge/progress-26%20stars-000000.svg?logo=star&style=flat-square&color=yellow)](https://adventofcode.com/2021)
 
 Just having a stab at the [2021 advent of code](https://adventofcode.com/2021/) challenge.
 These are **not** ideal or reference solutions by any stretch of the imagination.
@@ -26,6 +26,7 @@ These are **not** ideal or reference solutions by any stretch of the imagination
 | 10  | --- Day 10: Syntax Scoring ---         | :heavy_check_mark: :heavy_check_mark: [Complete](src/day10)|
 | 11  | --- Day 11: Dumbo Octopus ---          | :heavy_check_mark: :heavy_check_mark: [Complete](src/day11)|
 | 12  | --- Day 12: Passage Pathing ---        | :heavy_check_mark: :heavy_check_mark: [Complete](src/day12)|
+| 13  | --- Day 13: Transparent Origami ---    | :heavy_check_mark: :heavy_check_mark: [Complete](src/day13)|
 
 ## Personal Rules
 
@@ -34,7 +35,7 @@ It's easy to get carried away on this challenge, but I have a full time job and 
 1. This is about having fun, challenging myself and learning new things.
 2. I may skip days, particularly if I am getting bogged down on the problem or life gets in the way (See Rule #1).
 3. This year I am open to using 3rd party non-core python libraries where they would reduce dev time on a problem.
-4. I will not look at any reference solutions unless I have solved the problem already.
+4. I will not look at any reference solutions until after the event is complete.
 5. I can research ways of efficiently solving general problems required by the task provided it doesn't conflict with Rule #4.
 
 ## Structure
