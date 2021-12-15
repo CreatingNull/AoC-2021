@@ -3,35 +3,45 @@ from pathlib import Path
 
 from aoc import open_utf8
 
-# Still have to figure out a solution to part 2.
-# Not going to spend time linting until I have a design.
-# pylint: disable=C0116,R0913
+
+def polymerisation(rules: {}, steps: int, frequency: {}) -> ():
+    """Iterates through the time-steps and computes state based on pair
+    translation.
+
+    :param rules: Dictionary of the pairs mapping to new char.
+    :param steps: Number of steps to execute over.
+    :param frequency: Enumerated pairs and how many times they occur.
+    :return: Ordered tuple of dict item tuples, in descending order.
+    """
+    for _ in range(steps):
+        frequency_future = {key: 0 for key in frequency}
+        for pair in frequency:
+            if frequency[pair] != 0:  # each pair maps to 2 future pairs
+                frequency_future[pair[0] + rules[pair]] += frequency[pair]
+                frequency_future[rules[pair] + pair[-1]] += frequency[pair]
+        frequency = frequency_future
+    return sorted(count_chars(frequency).items(), key=lambda x: x[1], reverse=True)
 
 
-def polymerisation(template: str, rules: {}, steps: int, frequency: {}) -> {}:
-    for char in template:
-        frequency[char] += 1
-    for char_index in range(1, len(template)):
-        __find_polymer(
-            template[char_index - 1], template[char_index], 0, steps, rules, frequency
-        )
-    return sorted(
-        frequency.items(), key=lambda x: x[1], reverse=True
-    )  # sort by desc value
+def count_chars(frequency: {}) -> {}:
+    """Converts a dictionary of pair occurrences to char occurrences.
+
+    :param frequency: Dictionary of pair types to number of occurrences.
+    :return: Dictionary of char values to number of occurrences.
+    """
+    char_frequency = {}
+    for pair in frequency:
+        for char in pair:  # char in pair
+            if char in char_frequency:
+                char_frequency[char] += frequency[pair]
+            else:
+                char_frequency[char] = frequency[pair]
+    # most pairs are con-joined so take the ceil of half the value.
+    return {char: -(value // -2) for char, value in char_frequency.items()}
 
 
-def __find_polymer(
-    element_a: str, element_b: str, depth: int, limit: int, rules: {}, frequency: {}
-):
-    # Computes the next element and adds it to frequency then  recuses on self and a / b
-    if depth < limit:
-        new_char = rules[element_a + element_b]
-        frequency[new_char] += 1
-        __find_polymer(element_a, new_char, depth + 1, limit, rules, frequency)
-        __find_polymer(new_char, element_b, depth + 1, limit, rules, frequency)
-
-
-def load_dataset(dataset_path: Path) -> (str, {}, {}):
+def load_dataset(dataset_path: Path) -> ({}, {}):
+    """Loads the template and rules from file."""
     loading_rules = False  # Trigger to start loading rules
     template = ""
     rules = {}
@@ -43,12 +53,7 @@ def load_dataset(dataset_path: Path) -> (str, {}, {}):
             elif len(line.strip()) > 0:
                 rule_split = line.strip().split(" -> ")
                 rules[rule_split[0]] = rule_split[1]
-    frequency = {char: 0 for char in rules.values()}
-    return template, rules, frequency
-
-
-def compute_polymer_length(num_initial: int, steps: int) -> int:
-    accumulate = num_initial
-    for _ in range(steps):
-        accumulate += accumulate - 1
-    return accumulate
+    frequency = {pair: 0 for pair in rules}
+    for pair_index in range(1, len(template)):  # Add the template to frequency
+        frequency[template[pair_index - 1 : pair_index + 1]] += 1
+    return rules, frequency
