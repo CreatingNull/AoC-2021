@@ -50,6 +50,14 @@ The days code is executed using a module in the [tests](src/tests) package that 
 This pytest modules verify the answers against those I computed in the challenge, you can see the result of all the automated tests in [Github Actions](https://github.com/CreatingNull/AoC-2021/actions/workflows/run-tests.yml).
 
 Repository dependencies for executition are located in [requirements.txt](resources/requirements.txt).
+
+Currently, using:
+
+* **[Numpy](https://github.com/numpy/numpy)** - Python lists are cool, but they're kinda terrible when it comes to higher dimensional numeric matrix mathmatics.
+  Why waste your time when there is a well maintained library that is built for doing this efficiently?
+* **[Bitarray](https://github.com/ilanschnell/bitarray)** - Python does a lot of things well, but lacking a native way to work with bits via the list paradigm is a huge downside for serial-communications use-cases.
+  Why mess around with huge python types and having to bitmask everything when you can use this beautiful c extension?
+
 Code formatting is handled via [pre-commit](https://github.com/pre-commit/pre-commit) see the [hooks](.pre-commit-config.yaml) used on this repo.
 
 ## License
