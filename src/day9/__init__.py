@@ -2,12 +2,13 @@
 from dataclasses import dataclass
 from pathlib import Path
 
-from aoc import log
-from aoc import open_utf8
 from numpy import array
 from numpy import byte
 from numpy import product
 from numpy import sort
+
+from aoc import log
+from aoc import open_utf8
 
 
 @dataclass

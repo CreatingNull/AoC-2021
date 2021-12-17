@@ -2,13 +2,14 @@
 from dataclasses import dataclass
 from pathlib import Path
 
-from aoc import open_utf8
 from numpy import array
 from numpy import bitwise_or
 from numpy import byte
 from numpy import flip
 from numpy import sum as sum_
 from numpy import zeros
+
+from aoc import open_utf8
 
 
 @dataclass

@@ -1,11 +1,12 @@
 """--- Day 11: Dumbo Octopus ---"""
 from pathlib import Path
 
-from aoc import open_utf8
 from numpy import all as all_
 from numpy import array
 from numpy import byte
 from numpy import where
+
+from aoc import open_utf8
 
 
 def __execute_step(data: array, bounds: [[]]) -> int:

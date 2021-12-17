@@ -2,6 +2,7 @@
 from pathlib import Path
 
 import pytest
+
 from aoc import ROOT_PATH
 from day10 import parse_data
 

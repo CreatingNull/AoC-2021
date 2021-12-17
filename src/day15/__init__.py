@@ -3,11 +3,12 @@ from heapq import heappop
 from heapq import heappush
 from pathlib import Path
 
-from aoc import open_utf8
 from numpy import add
 from numpy import array
 from numpy import byte
 from numpy import zeros
+
+from aoc import open_utf8
 
 
 class Node:

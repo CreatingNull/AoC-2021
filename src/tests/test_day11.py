@@ -2,6 +2,7 @@
 from pathlib import Path
 
 import pytest
+
 from aoc import log
 from aoc import ROOT_PATH
 from day11 import execute_steps
