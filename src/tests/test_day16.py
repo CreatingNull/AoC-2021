@@ -1,5 +1,4 @@
 """Test cases for day 16."""
-from logging import DEBUG
 from pathlib import Path
 
 import pytest
@@ -8,9 +7,6 @@ from aoc import log
 from aoc import ROOT_PATH
 from day16 import load_dataset
 from day16 import Packet
-
-
-log.setLevel(DEBUG)
 
 
 @pytest.mark.parametrize(
