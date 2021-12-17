@@ -19,7 +19,7 @@ from day15 import load_dataset
     ],
 )
 def test_day(dataset_path: Path, tiling, risk_limit):
-    """Test case for verifying the results of day 14."""
+    """Test case for verifying the results of day 15."""
     search_map = load_dataset(ROOT_PATH.joinpath(dataset_path), tiling=tiling)
     log.info(
         "Loaded day 15 dataset %s tiling %d produces a %s grid",
