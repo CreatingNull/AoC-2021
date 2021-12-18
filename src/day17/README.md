@@ -13,7 +13,7 @@ The time pressure is also a massive consideration now, I don't have the spare ti
 There was a few optimisations I managed to include:
 
 * The height reached is the triangular number of the y-axis launch velocity.
-* THe x-axis launch velocities triangular number must be greater than the low limit for the x goal. Otherwise, you'll never reach it.
+* The x-axis launch velocities triangular number must be greater than the low limit for the x goal. Otherwise, you'll never reach it.
 * If you compute one dimension in isolation you can use this data to reduce the search space for the other axis.
 
-Feeling a little demoralised by this task, lets hope for a second wind with day 17.
+Feeling a little demoralised by this task, lets hope for a second wind with day 18.
