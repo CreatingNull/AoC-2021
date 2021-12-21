@@ -5,7 +5,7 @@
 [![Repo Tests](https://img.shields.io/github/workflow/status/CreatingNull/AoC-2021/Tests?logo=GitHub&style=flat-square&label=tests)](https://github.com/CreatingNull/AoC-2021/actions/workflows/run-tests.yml)
 [![License](https://img.shields.io/:license-mit-blue.svg?style=flat-square&color=orange)](LICENSE.md)
 [![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/psf/black)
-[![Stars](https://img.shields.io/badge/progress-34%20stars-000000.svg?logo=star&style=flat-square&color=yellow)](https://adventofcode.com/2021)
+[![Stars](https://img.shields.io/badge/progress-36%20stars-000000.svg?logo=star&style=flat-square&color=yellow)](https://adventofcode.com/2021)
 
 Just having a stab at the [2021 advent of code](https://adventofcode.com/2021/) challenge.
 These are **not** ideal or reference solutions by any stretch of the imagination.
@@ -31,6 +31,7 @@ These are **not** ideal or reference solutions by any stretch of the imagination
 | 15  | --- Day 15: Chiton ---                  | :heavy_check_mark: :heavy_check_mark: [Complete](src/day15) |
 | 16  | --- Day 16: Packet Decoder ---          | :heavy_check_mark: :heavy_check_mark: [Complete](src/day16) |
 | 17  | --- Day 17: Trick Shot ---              | :heavy_check_mark: :heavy_check_mark: [Complete](src/day17) |
+| 18  | --- Day 18: Snailfish ---               | :heavy_check_mark: :heavy_check_mark: [Complete](src/day18) |
 
 ## Personal Rules
 
