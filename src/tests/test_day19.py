@@ -1,5 +1,4 @@
 """Test cases for day 19."""
-from logging import DEBUG
 from pathlib import Path
 
 import pytest
@@ -9,8 +8,6 @@ from aoc import ROOT_PATH
 from day19 import align_scanners_to_reference
 from day19 import load_dataset
 from day19 import max_manhattan_distance
-
-log.setLevel(DEBUG)
 
 
 @pytest.mark.parametrize(
