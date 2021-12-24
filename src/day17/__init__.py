@@ -106,7 +106,7 @@ def nth_triangular_number(number: int) -> int:
 
 
 def load_dataset(dataset_path: Path) -> Probe:
-    """Loads binary data from file into a bitarray."""
+    """Loads binary data from file into a submarine probe object."""
     with open_utf8(dataset_path) as file:
         data = file.readline().strip().split("x=")
         return Probe(

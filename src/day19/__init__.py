@@ -132,7 +132,7 @@ def max_manhattan_distance(scanners: [Scanner]) -> int:
 
 
 def load_dataset(dataset_path: Path):
-    """Loads binary data from file into a bitarray."""
+    """Loads binary data from file into an array of scanner objects."""
     scanners = []
     with open_utf8(dataset_path) as file:
         scanners.append(

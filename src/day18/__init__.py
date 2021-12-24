@@ -228,7 +228,7 @@ def find_greatest_magnitude(numbers: [SnailfishNumber]):
 
 
 def load_dataset(dataset_path: Path):
-    """Loads binary data from file into a bitarray."""
+    """Loads binary data from file into an array of binary tree nodes."""
     nodes = []
     with open_utf8(dataset_path) as file:
         # Not a good idea in general unless you trust the source.
