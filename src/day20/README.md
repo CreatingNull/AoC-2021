@@ -9,8 +9,9 @@ This package contains the source and data for [day 20](https://adventofcode.com/
 
 It was pretty mean of AoC to specifically design the example not to trigger the infinite-plane, and then to include this in the actual input.
 My opinion is the example data shouldn't be used specifically to mislead the programmer, that is just in bad taste, design your problems to be more subtle rather than using trick data.
-They also don't clarify that either 0 or 512 MUST be 0 otherwise the answer is infinite, so really it's an unsolvable task for all inputs. 
-I dealt with the infinite plane conundrum by bounding to the un-padded region and ignoring relying on the fact that all 0's and 512s will perpetually invert each other and so as long as we are on an even step we have a finite answer. 
+They also don't clarify that either 0 or 512 MUST be 0 otherwise the answer is infinite, so really it's an unsolvable task for all inputs.
+I dealt with the infinite plane conundrum by pretty much ignoring it on the time-step where the sum would go infinite.
+Instead I just correct on the next timestamp by reversing the inverting the change to the border elements.
 
-Still easier than day 19 though... 
-Again bitarray and numpy coming in handy, probably my most efficient solution in the last few days.
+Again bitarray and numpy coming in handy, however I don't believe this was the most efficient solution at all.
+I think if I was to do this again I would rethink the data structuring as you have to waste a lot of horsepower on array operations with this implementation.
