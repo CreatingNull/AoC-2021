@@ -5,7 +5,7 @@
 [![Repo Tests](https://img.shields.io/github/workflow/status/CreatingNull/AoC-2021/Tests?logo=GitHub&style=flat-square&label=tests)](https://github.com/CreatingNull/AoC-2021/actions/workflows/run-tests.yml)
 [![License](https://img.shields.io/:license-mit-blue.svg?style=flat-square&color=orange)](LICENSE.md)
 [![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/psf/black)
-[![Stars](https://img.shields.io/badge/progress-40%20stars-000000.svg?logo=star&style=flat-square&color=yellow)](https://adventofcode.com/2021)
+[![Stars](https://img.shields.io/badge/progress-42%20stars-000000.svg?logo=star&style=flat-square&color=yellow)](https://adventofcode.com/2021)
 
 Just having a stab at the [2021 advent of code](https://adventofcode.com/2021/) challenge.
 These are **not** ideal or reference solutions by any stretch of the imagination.
@@ -34,6 +34,7 @@ These are **not** ideal or reference solutions by any stretch of the imagination
 | 18  | --- Day 18: Snailfish ---               | :heavy_check_mark: :heavy_check_mark: [Complete](src/day18) |
 | 19  | --- Day 19: Beacon Scanner ---          | :heavy_check_mark: :heavy_check_mark: [Complete](src/day19) |
 | 20  | --- Day 20: Trench Map ---              | :heavy_check_mark: :heavy_check_mark: [Complete](src/day20) |
+| 21  | --- Day 21: Dirac Dice ---              | :heavy_check_mark: :heavy_check_mark: [Complete](src/day21) |
 
 ## Personal Rules
 
