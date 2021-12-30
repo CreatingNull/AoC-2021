@@ -13,33 +13,33 @@ These are **not** ideal or reference solutions by any stretch of the imagination
 
 ## Progress
 
-| Day | Name                                    | Status                                                      |
-|-----|-----------------------------------------|-------------------------------------------------------------|
-| 1   | --- Day 1: Sonar Sweep ---              | :heavy_check_mark: :heavy_check_mark: [Complete](src/day1)  |
-| 2   | --- Day 2: Dive! ---                    | :heavy_check_mark: :heavy_check_mark: [Complete](src/day2)  |
-| 3   | --- Day 3: Binary Diagnostic ---        | :heavy_check_mark: :heavy_check_mark: [Complete](src/day3)  |
-| 4   | --- Day 4: Giant Squid ---              | :heavy_check_mark: :heavy_check_mark: [Complete](src/day4)  |
-| 5   | --- Day 5: Hydrothermal Venture ---     | :heavy_check_mark: :heavy_check_mark: [Complete](src/day5)  |
-| 6   | --- Day 6: Lanternfish ---              | :heavy_check_mark: :heavy_check_mark: [Complete](src/day6)  |
-| 7   | --- Day 7: The Treachery of Whales ---  | :heavy_check_mark: :heavy_check_mark: [Complete](src/day7)  |
-| 8   | --- Day 8: Seven Segment Search ---     | :heavy_check_mark: :heavy_check_mark: [Complete](src/day8)  |
-| 9   | --- Day 9: Smoke Basin ---              | :heavy_check_mark: :heavy_check_mark: [Complete](src/day9)  |
-| 10  | --- Day 10: Syntax Scoring ---          | :heavy_check_mark: :heavy_check_mark: [Complete](src/day10) |
-| 11  | --- Day 11: Dumbo Octopus ---           | :heavy_check_mark: :heavy_check_mark: [Complete](src/day11) |
-| 12  | --- Day 12: Passage Pathing ---         | :heavy_check_mark: :heavy_check_mark: [Complete](src/day12) |
-| 13  | --- Day 13: Transparent Origami ---     | :heavy_check_mark: :heavy_check_mark: [Complete](src/day13) |
-| 14  | --- Day 14: Extended Polymerization --- | :heavy_check_mark: :heavy_check_mark: [Complete](src/day14) |
-| 15  | --- Day 15: Chiton ---                  | :heavy_check_mark: :heavy_check_mark: [Complete](src/day15) |
-| 16  | --- Day 16: Packet Decoder ---          | :heavy_check_mark: :heavy_check_mark: [Complete](src/day16) |
-| 17  | --- Day 17: Trick Shot ---              | :heavy_check_mark: :heavy_check_mark: [Complete](src/day17) |
-| 18  | --- Day 18: Snailfish ---               | :heavy_check_mark: :heavy_check_mark: [Complete](src/day18) |
-| 19  | --- Day 19: Beacon Scanner ---          | :heavy_check_mark: :heavy_check_mark: [Complete](src/day19) |
-| 20  | --- Day 20: Trench Map ---              | :heavy_check_mark: :heavy_check_mark: [Complete](src/day20) |
-| 21  | --- Day 21: Dirac Dice ---              | :heavy_check_mark: :heavy_check_mark: [Complete](src/day21) |
-| 22  | --- Day 22: Reactor Reboot ---          | :heavy_check_mark: :heavy_check_mark: [Complete](src/day22) |
-| 23  | --- Day 23: Amphipod ---                | :heavy_check_mark: :heavy_check_mark: [Complete](src/day23) |
-| 24  | --- Day 24: Arithmetic Logic Unit ---   | :heavy_check_mark: :heavy_check_mark: [Complete](src/day24) |
-| 25  | --- Day 25: Sea Cucumber ---            | :heavy_check_mark: :heavy_check_mark: [Complete](src/day25) |
+| Day | Name                                    | Status                              |
+|-----|-----------------------------------------|-------------------------------------|
+| 1   | --- Day 1: Sonar Sweep ---              | :star: :star: [Complete](src/day1)  |
+| 2   | --- Day 2: Dive! ---                    | :star: :star: [Complete](src/day2)  |
+| 3   | --- Day 3: Binary Diagnostic ---        | :star: :star: [Complete](src/day3)  |
+| 4   | --- Day 4: Giant Squid ---              | :star: :star: [Complete](src/day4)  |
+| 5   | --- Day 5: Hydrothermal Venture ---     | :star: :star: [Complete](src/day5)  |
+| 6   | --- Day 6: Lanternfish ---              | :star: :star: [Complete](src/day6)  |
+| 7   | --- Day 7: The Treachery of Whales ---  | :star: :star: [Complete](src/day7)  |
+| 8   | --- Day 8: Seven Segment Search ---     | :star: :star: [Complete](src/day8)  |
+| 9   | --- Day 9: Smoke Basin ---              | :star: :star: [Complete](src/day9)  |
+| 10  | --- Day 10: Syntax Scoring ---          | :star: :star: [Complete](src/day10) |
+| 11  | --- Day 11: Dumbo Octopus ---           | :star: :star: [Complete](src/day11) |
+| 12  | --- Day 12: Passage Pathing ---         | :star: :star: [Complete](src/day12) |
+| 13  | --- Day 13: Transparent Origami ---     | :star: :star: [Complete](src/day13) |
+| 14  | --- Day 14: Extended Polymerization --- | :star: :star: [Complete](src/day14) |
+| 15  | --- Day 15: Chiton ---                  | :star: :star: [Complete](src/day15) |
+| 16  | --- Day 16: Packet Decoder ---          | :star: :star: [Complete](src/day16) |
+| 17  | --- Day 17: Trick Shot ---              | :star: :star: [Complete](src/day17) |
+| 18  | --- Day 18: Snailfish ---               | :star: :star: [Complete](src/day18) |
+| 19  | --- Day 19: Beacon Scanner ---          | :star: :star: [Complete](src/day19) |
+| 20  | --- Day 20: Trench Map ---              | :star: :star: [Complete](src/day20) |
+| 21  | --- Day 21: Dirac Dice ---              | :star: :star: [Complete](src/day21) |
+| 22  | --- Day 22: Reactor Reboot ---          | :star: :star: [Complete](src/day22) |
+| 23  | --- Day 23: Amphipod ---                | :star: :star: [Complete](src/day23) |
+| 24  | --- Day 24: Arithmetic Logic Unit ---   | :star: :star: [Complete](src/day24) |
+| 25  | --- Day 25: Sea Cucumber ---            | :star: :star: [Complete](src/day25) |
 
 ## Personal Rules
 
