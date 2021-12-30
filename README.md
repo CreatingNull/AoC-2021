@@ -5,9 +5,10 @@
 [![Repo Tests](https://img.shields.io/github/workflow/status/CreatingNull/AoC-2021/Tests?logo=GitHub&style=flat-square&label=tests)](https://github.com/CreatingNull/AoC-2021/actions/workflows/run-tests.yml)
 [![License](https://img.shields.io/:license-mit-blue.svg?style=flat-square&color=orange)](LICENSE.md)
 [![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/psf/black)
-[![Stars](https://img.shields.io/badge/progress-48%20stars-000000.svg?logo=star&style=flat-square&color=yellow)](https://adventofcode.com/2021)
+[![Stars](https://img.shields.io/badge/progress-50%20stars-000000.svg?logo=star&style=flat-square&color=yellow)](https://adventofcode.com/2021)
 
-Just having a stab at the [2021 advent of code](https://adventofcode.com/2021/) challenge.
+Had a stab at the [2021 advent of code](https://adventofcode.com/2021/) challenge.
+
 These are **not** ideal or reference solutions by any stretch of the imagination.
 
 ## Progress
@@ -38,6 +39,7 @@ These are **not** ideal or reference solutions by any stretch of the imagination
 | 22  | --- Day 22: Reactor Reboot ---          | :heavy_check_mark: :heavy_check_mark: [Complete](src/day22) |
 | 23  | --- Day 23: Amphipod ---                | :heavy_check_mark: :heavy_check_mark: [Complete](src/day23) |
 | 24  | --- Day 24: Arithmetic Logic Unit ---   | :heavy_check_mark: :heavy_check_mark: [Complete](src/day24) |
+| 25  | --- Day 25: Sea Cucumber ---            | :heavy_check_mark: :heavy_check_mark: [Complete](src/day25) |
 
 ## Personal Rules
 
@@ -57,9 +59,9 @@ My personal data is included as a text file in each challenge's package under th
 The days code is executed using a module in the [tests](src/tests) package that executes via a Pytest runner.
 This pytest modules verify the answers against those I computed in the challenge, you can see the result of all the automated tests in [Github Actions](https://github.com/CreatingNull/AoC-2021/actions/workflows/run-tests.yml).
 
-Repository dependencies for executition are located in [requirements.txt](resources/requirements.txt).
+Repository dependencies for execution are located in [requirements.txt](resources/requirements.txt).
 
-Currently, using:
+Used the following third party libs:
 
 * **[Numpy](https://github.com/numpy/numpy)** - Python lists are cool, but they're kinda terrible when it comes to higher dimensional numeric matrix mathmatics.
   Why waste your time when there is a well maintained library that is built for doing this efficiently?
